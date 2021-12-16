@@ -38,7 +38,7 @@ def load():
     df = df.drop(df.index[-1])
     df.index = pd.to_datetime(df.index)
 
-    df2 = pd.read_csv('Tags_and_Units.csv')
+    df2 = pd.read_csv('/content/drive/MyDrive/2021/Vis_Test/Tags_and_Units.csv')
     new_cols = df2.columns.values
     new_cols[0] = 'Variable'
     df2.columns = new_cols
