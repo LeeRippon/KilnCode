@@ -33,7 +33,7 @@ from scipy.signal import butter, lfilter, freqz, filtfilt
 def load():
     print('Loading kiln data...')
     t1 = time()
-    df = pd.read_csv('Full_Kiln_Data_2015-2020b.csv') 
+    df = pd.read_csv('/content/drive/MyDrive/2021/Vis_Test/Full_Kiln_Data_2015-2020b.csv') 
     df  = df.set_index('datetime')
     df = df.drop(df.index[-1])
     df.index = pd.to_datetime(df.index)
