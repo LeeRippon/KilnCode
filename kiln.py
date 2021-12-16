@@ -17,21 +17,6 @@ from pandas import datetime
 import scipy
 from scipy import signal
 from scipy.signal import butter, lfilter, freqz, filtfilt
-import statsmodels.api as sm
-from statsmodels.tsa.ar_model import AutoReg
-from statsmodels.tsa.api import VAR
-from statsmodels.tsa.api import VARMAX
-from io import BytesIO
-
-from reportlab.platypus import SimpleDocTemplate
-from reportlab.lib.pagesizes import letter
-from reportlab.platypus import Table
-from reportlab.platypus import TableStyle
-from reportlab.lib import colors 
-from reportlab.pdfgen import canvas
-from reportlab.graphics import renderPDF
-from svglib.svglib import svg2rlg
-from reportlab.lib.units import inch
 
 # import math 
 # from scipy import stats
